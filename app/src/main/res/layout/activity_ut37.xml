@@ -1,0 +1,3123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Ut37Activity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="180dp"
+        android:layout_height="149dp"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        tools:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="140dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="32dp"
+        android:text="FORM.:011"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="140dp"
+        android:layout_height="22dp"
+        android:text="Transporte"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="356dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="32dp"
+        android:text="Relatório Diário de Equipamento"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="PO-PRD.:0007/PO-PRD. 00017"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Caminhão Mercedes-Benz Axor 4144 - UT-37"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView72"
+        app:layout_constraintStart_toStartOf="@+id/textView72"
+        app:layout_constraintTop_toTopOf="@+id/textView72" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="140dp"
+        android:layout_height="22dp"
+        android:text="REV.:01"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="650dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="650dp"
+            android:layout_height="80000dp"
+            android:orientation="vertical">
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="241dp">
+
+                <TableLayout
+                    android:id="@+id/tableLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintStart_toStartOf="@id/textView140"
+                    app:layout_constraintTop_toBottomOf="@+id/textView140">
+
+                    <TableRow
+                        android:layout_width="500dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView142"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/textview_border"
+                            android:gravity="center|center_vertical"
+                            android:text="Operador"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtUt37Mot"
+                            android:layout_width="239dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview_border"
+                            android:editable="false"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="500dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView143"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/textview_border"
+                            android:gravity="center|center_vertical"
+                            android:text="Data"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtUt37Data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview_border"
+                            android:editable="false"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView144"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/textview_border"
+                            android:gravity="center|center_vertical"
+                            android:text="Hora incial"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtUt37HI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview_border"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView145"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/textview_border"
+                            android:gravity="center|center_vertical"
+                            android:text="Hora final"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtUt37HF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView146"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/textview_border"
+                            android:gravity="center|center_vertical"
+                            android:text="Horímetro inicial"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtUt37HoriI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:textAlignment="center" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView147"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/textview_border"
+                            android:gravity="center|center_vertical"
+                            android:text="Horímetro final"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtUt37HoriF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:inputType="numberDecimal"
+                            android:textAlignment="center" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView154">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView150"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview_border"
+                            android:text="Condições de pista"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Spinner
+                            android:id="@+id/spUt37CondPista"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:background="@drawable/spinner_background" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtUt37CondPistaObs"
+                            android:layout_width="187dp"
+                            android:layout_height="180dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="Obs:"
+                            android:inputType="textMultiLine"
+                            android:textSize="14sp" />
+                    </TableRow>
+                </TableLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView185"
+                    android:layout_width="546dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cabecalho_background"
+                    android:gravity="center"
+                    android:text="Paradas do equipamento"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="345dp">
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tableLayout6">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView61"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/cabecalho_background"
+                            android:gravity="center"
+                            android:hint="Clique aqui"
+                            android:text="Início"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView62"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/cabecalho_background"
+                            android:gravity="center"
+                            android:hint="Clique aqui"
+                            android:text="Fim"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/cabecalho_background"
+                            android:gravity="center"
+                            android:text="Descrição"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+
+                            android:id="@+id/txtPEUt37HI1"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HF1"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spPEUt37Desc1"
+                            android:layout_width="346dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinner_background" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HI2"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HF2"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spPEUt37Desc2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinner_background" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HI3"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HF3"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spPEUt37Desc3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinner_background" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HI4"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HF4"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spPEUt37Desc4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinner_background" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HI5"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HF5"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spPEUt37Desc5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinner_background" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HI6"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HF6"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spPEUt37Desc6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinner_background" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HI7"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HF7"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spPEUt37Desc7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinner_background"
+                            android:baselineAligned="false" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HI8"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HF8"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spPEUt37Desc8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinner_background" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HI9"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HF9"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spPEUt37Desc9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinner_background" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HI10"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/txtPEUt37HF10"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:enabled="true"
+                            android:hint="Clique aqui"
+                            android:inputType="textPersonName"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spPEUt37Desc10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinner_background" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </TableRow>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView63"
+                        android:layout_width="600dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cabecalho_background"
+                        android:text="Viagens por hora"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </TableLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:id="@+id/tableLayout7"
+                    android:layout_width="600dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toEndOf="@+id/tableLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/textView156">
+
+                    <TableRow
+                        android:id="@+id/qt78"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="600dp"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="600dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView155"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:gravity="center|center_vertical"
+                                    android:text="07 às 08"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagens78078"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="gravity"
+                                    android:textSize="30sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens78078Mais"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_mais"
+                                    android:shadowColor="@android:color/holo_green_light"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens78078Menos"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_menos1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtUt37Obs78"
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:ems="10"
+                                    android:hint="Obs"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/qt89"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:gravity="center|center_vertical"
+                                    android:text="08 às 09"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagens78089"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens78089Mais"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_mais"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens78089Menos"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_menos1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtUt37Obs89"
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:ems="10"
+                                    android:hint="Obs"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/qt910"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView54"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:gravity="center|center_vertical"
+                                    android:text="09 às 10"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagens780910"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens780910Mais"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_mais"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens780910Menos"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_menos1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtUt37Obs910"
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:ems="10"
+                                    android:hint="Obs"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/bt910"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/qt1011"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView131"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:gravity="center|center_vertical"
+                                    android:text="10 às 11"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagens7801011"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801011Mais"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_mais"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801011Menos"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_menos1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtUt37Obs1011"
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:ems="10"
+                                    android:hint="Obs"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/bt1011"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/qt1112"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView132"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:gravity="center|center_vertical"
+                                    android:text="11 às 12"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagens7801112"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801112Mais"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_mais"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801112Menos"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_menos1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtUt37Obs1112"
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:ems="10"
+                                    android:hint="Obs"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/bt1112"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/qt1213"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView136"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:gravity="center|center_vertical"
+                                    android:text="12 às 13"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagens7801213"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801213Mais"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_mais"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801213Menos"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_menos1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtUt37Obs1213"
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:ems="10"
+                                    android:hint="Obs"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/bt1213"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/qt1314"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView137"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:gravity="center|center_vertical"
+                                    android:text="13 às 14"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagens7801314"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801314Mais"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_mais"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801314Menos"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_menos1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtUt37Obs1314"
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:ems="10"
+                                    android:hint="Obs"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/bt1314"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/qt1415"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView141"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:gravity="center|center_vertical"
+                                    android:text="14 às 15"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagens7801415"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801415Mais"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_mais"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801415Menos"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_menos1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtUt37Obs1415"
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:ems="10"
+                                    android:hint="Obs"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/bt1415"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/qt1516"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView148"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:gravity="center|center_vertical"
+                                    android:text="15 às 16"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagens7801516"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801516Mais"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_mais"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801516Menos"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_menos1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtUt37Obs1516"
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:ems="10"
+                                    android:hint="Obs"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/bt1516"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/qt1617"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView149"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:gravity="center|center_vertical"
+                                    android:text="16 às 17"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagens7801617"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801617Mais"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_mais"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801617Menos"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_menos1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtUt37Obs1617"
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:ems="10"
+                                    android:hint="Obs"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/bt1617"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/qt1718"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView152"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:gravity="center|center_vertical"
+                                    android:text="17 às 18"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagens7801718"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="30sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801718Mais"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_mais"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Viagens7801718Menos"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/btn_default_menos1"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/txtUt37Obs1718"
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/textview_border"
+                                    android:ems="10"
+                                    android:hint="Obs"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/bt1718"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/cbTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView111"
+                                    android:layout_width="180dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/cabecalho_background"
+                                    android:text="TOTAL DE VIAGENS"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/total"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:id="@+id/total1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/txtUt37NumViagensSoma780"
+                                    android:layout_width="180dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="center|center_vertical"
+                                    android:text="0"
+                                    android:textAlignment="center"
+                                    android:textSize="24sp" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+                    </TableRow>
+
+                </TableLayout>
+
+            </TableRow>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="583dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cabecalho_background"
+                        android:text="Viagens para estoque "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Areia Média-Praça"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Bica contaminada"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Areia Fina"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Pedrisco"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Bica-Praça"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Bica-790"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensEstoqueAM"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensEstoqueAMUM"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensEstoqueAF"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensEstoquePedrisco"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensEstoqueBicaPr"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensEstoque790"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnUt37VEAMMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEAMMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEAMUMMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEAMUMMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEAFMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEAFMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEPedrMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEPedrMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEBicaPrMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEBicaPrMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEBica790Mais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEBica790Menos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Bica U&amp;M"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Brita 1-Praça"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Brita 1-19mm"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Brita 0-Praça"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Brita 0-U&amp;M"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensEstoqueBicaUM"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensEstoqueB1Pr"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensEstoqueB119"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensEstoqueB0Pr"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensEstoqueB0UM"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnUt37VEBicaUMMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEBicaUMMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEB1PrMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEB1PrMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEB119Mais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEB119Menos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEB0PrMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEB0PrMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEB0UMMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37VEB0UMMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="583dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cabecalho_background"
+                        android:text="Demais serviços"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView69"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Bica p/ forro"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView65"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="B0 p/ traços"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView91"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="B1 p/ traços"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView93"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="B2 p/ traços"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView95"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="AIM p/ traços"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView94"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="Fundo U&amp;M"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensDServForro"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensDServB0"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensDServB1"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensDServB2"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensDServAIM"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensDServFundo"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServForroMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServForroMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServB0Mais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServB0Menos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServB1Mais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServB1Menos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServB2Mais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServB2Menos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServAIMMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServAIMMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServFundoMais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensDServFundoMenos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cabecalho_background"
+                        android:text="Viagens de fogacho"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="780"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="790"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="800"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/cabecalho_background"
+                                android:text="810"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensFogacho780"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensFogacho790"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensFogacho800"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtUt37NumViagensFogacho810"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/textview_border"
+                                android:text="0"
+                                android:textAlignment="center" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensFogacho780Mais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensFogacho780Menos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensFogacho790Mais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensFogacho790Menos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensFogacho800Mais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensFogacho800Menos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensFogacho810Mais"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_mais"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/btnUt37ViagensFogacho810Menos"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/btn_default_menos1"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+                </TableRow>
+
+            </TableLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="380dp">
+
+                <TableLayout
+                    android:id="@+id/tableLayout4"
+                    android:layout_width="115dp"
+                    android:layout_height="210dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview_border"
+                            android:text="Checklist(apto para uso)"
+                            android:textAlignment="center"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/chkUt37Pn"
+                            android:layout_width="115dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/textview_border"
+                            android:text="Pneus"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/chkUt37Ol"
+                            android:layout_width="115dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/textview_border"
+                            android:text="Nível de óleo"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/chkUt37Dir"
+                            android:layout_width="115dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/textview_border"
+                            android:text="Direção"
+                            android:textColor="#000000"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/chkUt37Fr"
+                            android:layout_width="115dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/textview_border"
+                            android:text="Freios"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/chkUt37H2O"
+                            android:layout_width="115dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/textview_border"
+                            android:text="Nível de água"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/chkUt37Lant"
+                            android:layout_width="115dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/textview_border"
+                            android:text="Lanternagem"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <CheckBox
+                            android:id="@+id/chkUt37PtElet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview_border"
+                            android:text="Parte elétrica"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/txtUt37Obs"
+                            android:layout_width="428dp"
+                            android:layout_height="145dp"
+                            android:background="@drawable/textview_border"
+                            android:ems="10"
+                            android:gravity="start|top"
+                            android:hint="Observações:"
+                            android:inputType="textMultiLine" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Space
+                                    android:layout_width="45dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Sincronizar"
+                                    android:layout_width="128dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:drawable/btn_default"
+                                    android:onClick="salvar"
+                                    android:text="SINCRONIZAR" />
+
+                                <Space
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Save"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:drawable/btn_default"
+                                    android:onClick="salvar"
+                                    android:text="SALVAR" />
+
+                                <Space
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content" />
+
+                                <Button
+                                    android:id="@+id/btnUt37Cancel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:drawable/btn_default"
+                                    android:text="CANCELAR" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </TableLayout>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

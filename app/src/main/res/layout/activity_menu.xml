@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:defaultFocusHighlightEnabled="true"
+    android:textAlignment="center"
+    app:backgroundTint="#7CE4E3E3"
+    tools:context=".Activities.MenuActivity">
+
+    <Button
+        android:id="@+id/buttonuc11"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:text="UC-11"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonub2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonuc07"
+        app:layout_constraintTop_toBottomOf="@+id/buttonuc14" />
+
+    <Button
+        android:id="@+id/buttonuc13"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:text="UC-13"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonusina"
+        app:layout_constraintEnd_toStartOf="@+id/buttonub2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonuc07" />
+
+    <Button
+        android:id="@+id/buttonusina"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="80dp"
+        android:text="USINA"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#7CE4E3E3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonrebritagem"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonuc13" />
+
+    <Button
+        android:id="@+id/buttonrebritagem"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="80dp"
+        android:text="REBRITAGEM"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#797171"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonusina"
+        app:layout_constraintTop_toBottomOf="@+id/buttonub2" />
+
+    <Button
+        android:id="@+id/buttonub2"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:text="UB-02"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/buttonrebritagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonuc13"
+        app:layout_constraintTop_toBottomOf="@+id/buttonuc11" />
+
+    <Button
+        android:id="@+id/buttonuc14"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:text="UC-14"
+        android:textAlignment="gravity"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonuc11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonuc06"
+        app:layout_constraintTop_toBottomOf="@+id/buttonup0506" />
+
+    <Button
+        android:id="@+id/buttonuc06"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:text="UC-06"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonuc07"
+        app:layout_constraintEnd_toStartOf="@+id/buttonuc14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonut08" />
+
+    <Button
+        android:id="@+id/buttonut08"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:text="UT-08"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toTopOf="@+id/buttonuc06"
+        app:layout_constraintEnd_toStartOf="@+id/buttonup0506"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonmn01" />
+
+    <Button
+        android:id="@+id/buttonup0506"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:text="UP-05/UP-07"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toTopOf="@+id/buttonuc14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonut08"
+        app:layout_constraintTop_toBottomOf="@+id/buttonut07" />
+
+    <Button
+        android:id="@+id/buttonut07"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:text="UT-07"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toTopOf="@+id/buttonup0506"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonmn01"
+        app:layout_constraintTop_toBottomOf="@+id/buttonus06" />
+
+    <Button
+        android:id="@+id/buttonmn01"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:text="MN-01"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/buttonut08"
+        app:layout_constraintEnd_toStartOf="@+id/buttonut07"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonus36" />
+
+    <Button
+        android:id="@+id/buttonus06"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:text="US-06"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/buttonut07"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/buttonus36"
+        app:layout_constraintTop_toBottomOf="@+id/txtMenuLogin" />
+
+    <Button
+        android:id="@+id/buttonus36"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:text="US-37"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/buttonmn01"
+        app:layout_constraintEnd_toStartOf="@+id/buttonus06"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <Button
+        android:id="@+id/buttonuc07"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:text="UC-07"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF0000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonuc13"
+        app:layout_constraintEnd_toStartOf="@+id/buttonuc11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonuc06" />
+
+    <Button
+        android:id="@+id/buttonut37"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:text="UT-37"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonrebritagem" />
+
+    <TextView
+        android:id="@+id/txtMenuLogin"
+        android:layout_width="250dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView35"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="USUÁRIO LOGADO"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtMenuLogin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CADASTRO DE USUÁRIO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

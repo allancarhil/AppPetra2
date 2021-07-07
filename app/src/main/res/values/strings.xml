@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">Parte Diaria</string>
+
+
+    <string-array name="hora">
+        <item>          </item>
+        <item>7-8</item>
+        <item>8-9</item>
+        <item>9-10</item>
+        <item>10-11</item>
+        <item>11-12</item>
+        <item>12-13</item>
+        <item>13-14</item>
+        <item>14-15</item>
+        <item>15-16</item>
+        <item>16-17</item>
+        <item>17-18</item>
+    </string-array>
+
+
+    <string-array name="equipamento">
+        <item>          </item>
+        <item>UTC-02</item>
+        <item>UTC-03</item>
+        <item>UTC-04</item>
+        <item>UTC-05</item>
+        <item>UTC-06</item>
+        <item>UTC-07</item>
+        <item>UTC-08</item>
+        <item>UTC-09</item>
+        <item>UTC-10</item>
+        <item>UTC-11</item>
+        <item>UTC-12</item>
+        <item>UTC-13</item>
+        <item>UTC-14</item>
+        <item>UTC-15</item>
+        <item>UTC-16</item>
+        <item>UTC-17</item>
+        <item>UTC-18</item>
+        <item>UTC-19</item>
+        <item>UTC-20</item>
+        <item>UR-01</item>
+        <item>UR-02</item>
+        <item>UR-03</item>
+        <item>UCP-01</item>
+        <item>UCP-02</item>
+        <item>UCP-03</item>
+        <item>UCP-04</item>
+        <item>UA-02</item>
+        <item>UA-03</item>
+        <item>UA-04</item>
+
+
+    </string-array>
+
+
+
+    <string-array name="banco">
+        <item>          </item>
+        <item>780</item>
+        <item>790 ED(Direita)</item>
+        <item>790 EE(Esquerda)</item>
+        <item>800</item>
+        <item>810</item>
+        <item>Crista</item>
+        <item>U&amp;M</item>
+    </string-array>
+
+
+    <string-array name="estoque">
+        <item>          </item>
+        <item>AREIA MÉDIA - praça</item>
+        <item>AREIA MÉDIA - U&amp;M</item>
+        <item>AREIA FINA</item>
+        <item>PEDRISCO</item>
+        <item>BICA - praça</item>
+        <item>BICA - 790</item>
+        <item>BICA - U&amp;M</item>
+        <item>BRITA 1 - praça</item>
+        <item>BRITA 1 - 19mm</item>
+        <item>BRITA 0  - praça</item>
+        <item>BRITA 0 - U&amp;M</item>
+    </string-array>
+
+
+    <string-array name="fogacho">
+        <item>          </item>
+        <item>780</item>
+        <item>790</item>
+        <item>800</item>
+    </string-array>
+
+    <string-array name="turno">
+        <item>          </item>
+        <item>1º Turno</item>
+        <item>2º Turno</item>
+
+    </string-array>
+
+
+
+    <string-array name="veiculo">
+        <item>          </item>
+        <item>TOCO</item>
+        <item>TRUCK</item>
+        <item>CARRETA</item>
+        <item>AXOR</item>
+    </string-array>
+
+    <string-array name="demaisServicos">
+        <item>          </item>
+        <item>Bica para forro</item>
+        <item>B#0 para traços</item>
+        <item>B#1 para traços</item>
+        <item>B#2 para traços</item>
+        <item>AIM para traços</item>
+        <item>Fundo de pedreira U&amp;M</item>
+    </string-array>
+
+
+    <string-array name="produto">
+        <item>          </item>
+        <item>B#0</item>
+        <item>B#1</item>
+        <item>B#2</item>
+        <item>AIM</item>
+        <item>AIF</item>
+        <item>Bica</item>
+    </string-array>
+
+
+    <string-array name="condPista">
+        <item>          </item>
+        <item>Muito boa</item>
+        <item>Boa</item>
+        <item>Regular</item>
+        <item>Ruim</item>
+        <item>Muito Ruim</item>
+    </string-array>
+
+
+    <string-array name="descricao">
+        <item>          </item>
+        <item>Chuva</item>
+        <item>Engaiolamento</item>
+        <item>Problema mecânico</item>
+        <item>Retirando material contaminado</item>
+        <item>Grelha dupla</item>
+        <item>Problema elétrico</item>
+        <item>Material molhado</item>
+        <item>Sem material p/ produzir</item>
+        <item>Produzido na crista</item>
+        <item>Falta de energia</item>
+        <item>Muito mataco</item>
+        <item>Carregamento com carregadeira</item>
+        <item>Fazendo descalço</item>
+        <item>Aguardando forro</item>
+        <item>Caixote cheio</item>
+        <item>Fazendo praça</item>
+        <item>Fogo grosso</item>
+    </string-array>
+
+
+
+    <string-array name="descricaoUp0507">
+        <item>          </item>
+        <item>Haste agarrada</item>
+        <item>Demais serviços</item>
+        <item>Problema mecânico martelo/PERF</item>
+        <item>Refazendo furação</item>
+        <item>Repé/crista</item>
+        <item>Locomoção</item>
+        <item>DETONAÇÃO</item>
+        <item>Material de desgaste</item>
+        <item>Mangueira</item>
+        <item>Nivelamento</item>
+        <item>Abastecimento</item>
+        <item>Limpeza bancada</item>
+        <item>Operador</item>
+        <item>Chuva</item>
+        <item>Manutenção</item>
+        <item>Reunião</item>
+        <item>Intervenção no compressor</item>
+    </string-array>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
