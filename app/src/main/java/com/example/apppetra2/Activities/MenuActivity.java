@@ -10,7 +10,10 @@ import android.widget.TextView;
 import com.example.apppetra2.DAO.FuncionarioDAO;
 import com.example.apppetra2.R;
 
-
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 
 public class MenuActivity extends AppCompatActivity {
@@ -40,7 +43,11 @@ public class MenuActivity extends AppCompatActivity {
         }
 
 
-
+        TextView data = (TextView) findViewById(R.id.txtMenuData);
+        Date d= Calendar.getInstance().getTime();
+        SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy");
+        String currentData=sdf.format(d);
+        data.setText(currentData);
 
 
         Button botaous36=findViewById(R.id.buttonus36);
