@@ -48,6 +48,7 @@ public class Uc13Activity extends AppCompatActivity {
 
     private Button btnUc13Salvar;
     private Button btnUC11Sincronizar;
+    private TextView nomeEquipamento;
 
     public Button btnUc13Cancelar;
     private EditText motorista;
@@ -154,6 +155,8 @@ public class Uc13Activity extends AppCompatActivity {
         oleo=findViewById(R.id.chkUc13Ol);
         hidraulico=findViewById(R.id.chkUc13Hidra);
         observacoes=findViewById(R.id.txtUc13Obs);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUc13);
+
         dao=new Uc13DAO(this);
         dao2=new Uc13DAOSync(this);
         btnUc13Salvar=findViewById(R.id.btnUc13Save);
@@ -685,6 +688,8 @@ public class Uc13Activity extends AppCompatActivity {
             btnUc13Salvar.setVisibility(View.INVISIBLE);
             btnUC11Sincronizar.setVisibility(View.VISIBLE);
             Uc13 c13 = new Uc13(
+                    nomeEquipamento.getText().toString(),
+
                     motorista.getText().toString(),
                     data.getText().toString(),
                     horaInicial.getText().toString(),
@@ -727,6 +732,7 @@ public class Uc13Activity extends AppCompatActivity {
                     hidraulico.getText().toString(),
                     observacoes.getText().toString()
             );
+            c13.setNomeEquipamento(nomeEquipamento.getText().toString());
             c13.setMotorista(motorista.getText().toString());
             c13.setData(data.getText().toString());
             c13.setHoraInicial(horaInicial.getText().toString());
@@ -813,6 +819,7 @@ public class Uc13Activity extends AppCompatActivity {
     public void sincronizar(View view){
 
         Uc13 c13 = new Uc13(
+                nomeEquipamento.getText().toString(),
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

@@ -17,6 +17,7 @@ public class Ut37DAOSync {
     }
     public long inserir(Ut37 ut37){
         ContentValues values=new ContentValues();
+        values.put("nomeEquipamento",ut37.getNomeEquipamento());
         values.put("motorista",ut37.getMotorista());
         values.put("data",ut37.getData());
         values.put("horaInicial",ut37.getHoraInicial());

@@ -4,10 +4,7 @@ package com.example.apppetra2.Classes;
 
 public class Uc06 {
 
-    public String getMotorista() {
-        return motorista;
-    }
-
+    private String nomeEquipamento;
     private String motorista;
     private String data;
     private String horaInicial;
@@ -134,7 +131,8 @@ public class Uc06 {
     private String observacoes;
 
 
-    public Uc06(String motorista, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String paradaInicial7, String paradaFinal7, String descricao7, String paradaInicial8, String paradaFinal8, String descricao8, String paradaInicial9, String paradaFinal9, String descricao9, String paradaInicial10, String paradaFinal10, String descricao10, String b0Vol, String b0NumViagens, String b0Mot, String b1Vol, String b1NumViagens, String b1Mot, String b2Vol, String b2NumViagens, String b2Mot, String b4Vol, String b4NumViagens, String b4Mot, String aimVol, String aimNumViagens, String aimMot, String aifVol, String aifNumViagens, String aifMot, String bicaVol, String bicaNumViagens, String bicaMot, String amprToco, String amprTruck, String amprCarreta, String amprAxor, String amprObs, String amumToco, String amumTruck, String amumCarreta, String amumAxor, String amumObs, String afToco, String afTruck, String afCarreta, String afAxor, String afObs, String pedToco, String pedTruck, String pedCarreta, String pedAxor, String pedObs, String bicaPrToco, String bicaPrTruck, String bicaPrCarreta, String bicaPrAxor, String bicaPrObs, String bica790Toco, String bica790Truck, String bica790Carreta, String bica790Axor, String bica790Obs, String bicaUmToco, String bicaUmTruck, String bicaUmCarreta, String bicaUmAxor, String bicaUmObs, String br1PrToco, String br1PrTruck, String br1PrCarreta, String br1PrAxor, String br1PrObs, String br119Toco, String br119Truck, String br119Carreta, String br119Axor, String br119Obs, String br0PrToco, String br0PrTruck, String br0PrCarreta, String br0PrAxor, String br0PrObs, String br0UmToco, String br0UmTruck, String br0UmCarreta, String br0UmAxor, String br0UmObs, String somaToco, String somaTruck, String somaCarreta, String somaAxor, String lanternagem, String pneus, String h2o, String oleo, String direcao, String freios, String parteEletrica, String observacoes) {
+    public Uc06(String nomeEquipamento,String motorista, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String paradaInicial7, String paradaFinal7, String descricao7, String paradaInicial8, String paradaFinal8, String descricao8, String paradaInicial9, String paradaFinal9, String descricao9, String paradaInicial10, String paradaFinal10, String descricao10, String b0Vol, String b0NumViagens, String b0Mot, String b1Vol, String b1NumViagens, String b1Mot, String b2Vol, String b2NumViagens, String b2Mot, String b4Vol, String b4NumViagens, String b4Mot, String aimVol, String aimNumViagens, String aimMot, String aifVol, String aifNumViagens, String aifMot, String bicaVol, String bicaNumViagens, String bicaMot, String amprToco, String amprTruck, String amprCarreta, String amprAxor, String amprObs, String amumToco, String amumTruck, String amumCarreta, String amumAxor, String amumObs, String afToco, String afTruck, String afCarreta, String afAxor, String afObs, String pedToco, String pedTruck, String pedCarreta, String pedAxor, String pedObs, String bicaPrToco, String bicaPrTruck, String bicaPrCarreta, String bicaPrAxor, String bicaPrObs, String bica790Toco, String bica790Truck, String bica790Carreta, String bica790Axor, String bica790Obs, String bicaUmToco, String bicaUmTruck, String bicaUmCarreta, String bicaUmAxor, String bicaUmObs, String br1PrToco, String br1PrTruck, String br1PrCarreta, String br1PrAxor, String br1PrObs, String br119Toco, String br119Truck, String br119Carreta, String br119Axor, String br119Obs, String br0PrToco, String br0PrTruck, String br0PrCarreta, String br0PrAxor, String br0PrObs, String br0UmToco, String br0UmTruck, String br0UmCarreta, String br0UmAxor, String br0UmObs, String somaToco, String somaTruck, String somaCarreta, String somaAxor, String lanternagem, String pneus, String h2o, String oleo, String direcao, String freios, String parteEletrica, String observacoes) {
+        this.nomeEquipamento=nomeEquipamento;
         this.motorista = motorista;
         this.data = data;
         this.horaInicial = horaInicial;
@@ -259,6 +257,18 @@ public class Uc06 {
         this.freios = freios;
         this.parteEletrica = parteEletrica;
         this.observacoes = observacoes;
+    }
+
+    public String getNomeEquipamento() {
+        return nomeEquipamento;
+    }
+
+    public void setNomeEquipamento(String nomeEquipamento) {
+        this.nomeEquipamento = nomeEquipamento;
+    }
+
+    public String getMotorista() {
+        return motorista;
     }
 
     public void setMotorista(String motorista) {

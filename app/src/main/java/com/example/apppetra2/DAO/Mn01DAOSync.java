@@ -17,6 +17,7 @@ public class Mn01DAOSync {
     }
     public long inserir(Mn01 mn01) {
         ContentValues values=new ContentValues();
+        values.put("nomeEquipamento",mn01.getNomeEquipamento());
         values.put("motorista",mn01.getMotorista());
         values.put("data",mn01.getData());
         values.put("horaInicial",mn01.getHoraInicial());

@@ -19,6 +19,7 @@ public class Uc13DAOSync {
     }
     public long inserir(Uc13 uc13){
         ContentValues values=new ContentValues();
+        values.put("nomeEquipamento",uc13.getNomeEquipamento());
         values.put("motorista",uc13.getMotorista());
         values.put("data",uc13.getData());
         values.put("horaInicial",uc13.getHoraInicial());

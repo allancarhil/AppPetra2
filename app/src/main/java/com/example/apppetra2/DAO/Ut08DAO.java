@@ -18,6 +18,7 @@ public class Ut08DAO {
     }
     public long inserir(Ut08 ut08){
         ContentValues values=new ContentValues();
+        values.put("nomeEquipamento",ut08.getNomeEquipamento());
         values.put("motorista",ut08.getMotorista());
         values.put("data",ut08.getData());
         values.put("horaInicial",ut08.getHoraInicial());

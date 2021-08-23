@@ -92,6 +92,7 @@ public class Ub02Activity extends AppCompatActivity {
     private Ub02DAO dao;
     private Ub02DAOSync dao2;
     private Retrofit retrofit;
+    private TextView nomeEquipamento;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -159,6 +160,7 @@ public class Ub02Activity extends AppCompatActivity {
         btnUb02Salvar=findViewById(R.id.btnUb02Save);
         btnUb02Sincronizar=findViewById(R.id.btnUb02Sincronizar);
         btnUb02Sincronizar.setVisibility(View.INVISIBLE);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUb02);
 
 
         Spinner spPEUb02Desc1= findViewById(R.id.spPEUb02Desc1);
@@ -684,7 +686,9 @@ public class Ub02Activity extends AppCompatActivity {
             btnUb02Salvar.setVisibility(View.INVISIBLE);
             btnUb02Sincronizar.setVisibility(View.VISIBLE);
             Ub02 b02 = new Ub02(
-            motorista.getText().toString(),
+                    nomeEquipamento.getText().toString(),
+
+                    motorista.getText().toString(),
             data.getText().toString(),
             horaInicial.getText().toString(),
             horaFinal.getText().toString(),
@@ -728,6 +732,7 @@ public class Ub02Activity extends AppCompatActivity {
             balancaInicial.getText().toString(),
             balancaFinal.getText().toString()
             );
+            b02.setNomeEquipamento(nomeEquipamento.getText().toString());
             b02.setMotorista(motorista.getText().toString());
             b02.setData(data.getText().toString());
             b02.setHoraInicial(horaInicial.getText().toString());
@@ -816,6 +821,8 @@ public class Ub02Activity extends AppCompatActivity {
 
     public void sincronizar(View view){
         Ub02 b02 = new Ub02(
+                nomeEquipamento.getText().toString(),
+
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

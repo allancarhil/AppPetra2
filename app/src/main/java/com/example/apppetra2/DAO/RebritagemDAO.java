@@ -18,6 +18,7 @@ public class RebritagemDAO {
 
     public long inserir(Rebritagem rebritagem) {
         ContentValues values = new ContentValues();
+        values.put("nomeEquipamento",rebritagem.getNomeEquipamento());
         values.put("motorista", rebritagem.getMotorista());
         values.put("data", rebritagem.getData());
         values.put("horaInicial", rebritagem.getHoraInicial());

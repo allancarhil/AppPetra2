@@ -450,12 +450,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
-        android:text="Motoniveladora 120B - MN01"
+        android:text="Motoniveladora 120B - "
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView26"
         app:layout_constraintStart_toStartOf="@+id/textView26"
         app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/txtNomeEquipamentoMn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MN-01"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintStart_toEndOf="@+id/textView21" />
 
     <TextView
         android:id="@+id/textView24"

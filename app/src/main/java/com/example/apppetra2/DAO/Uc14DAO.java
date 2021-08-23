@@ -17,6 +17,7 @@ public class Uc14DAO {
     }
     public long inserir(Uc14 uc14){
         ContentValues values=new ContentValues();
+        values.put("nomeEquipamento",uc4.getNomeEquipamento());
         values.put("motorista",uc14.getMotorista());
         values.put("data",uc14.getData());
         values.put("horaInicial",uc14.getHoraInicial());

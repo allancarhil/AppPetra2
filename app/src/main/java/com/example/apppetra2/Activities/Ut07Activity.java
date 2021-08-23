@@ -49,6 +49,7 @@ public class Ut07Activity extends AppCompatActivity {
     private Button btnUt07Salvar;
     private Button btnUt07Sincronizar;
 
+    private TextView nomeEquipamento;
 
     int numero78078 = 0;
     int numero78089 = 0;
@@ -360,6 +361,8 @@ public class Ut07Activity extends AppCompatActivity {
         btnUt07Sincronizar=findViewById(R.id.btnUt07Sincronizar);
         btnUt07Sincronizar.setVisibility(View.INVISIBLE);
         condicaoPistaObservacoes = findViewById(R.id.txtUt07CondPistaObs);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUt07);
+
         dao = new Ut07DAO(this);
         dao2=new Ut07DAOSync(this);
 
@@ -1900,6 +1903,7 @@ public class Ut07Activity extends AppCompatActivity {
             btnUt07Salvar.setVisibility(View.INVISIBLE);
             btnUt07Sincronizar.setVisibility(View.VISIBLE);
             Ut07 t07 = new Ut07(
+                    nomeEquipamento.getText().toString(),
                     motorista.getText().toString(),
                     data.getText().toString(),
                     horaInicial.getText().toString(),
@@ -2001,7 +2005,7 @@ public class Ut07Activity extends AppCompatActivity {
             String currentDateTimeString3 = DateFormat.getTimeInstance().format(new Date());
             horaFinal.setText(currentDateTimeString3);
             t07.setHoraFinal(horaFinal.getText().toString());
-
+            t07.setNomeEquipamento(nomeEquipamento.getText().toString());
             t07.setHorimetroInicial(horimetroInicial.getText().toString());
             t07.setHorimetroFinal(horimetroFinal.getText().toString());
             t07.setCondicaoPistaObservacoes(condicaoPistaObservacoes.getText().toString());
@@ -2178,6 +2182,7 @@ public class Ut07Activity extends AppCompatActivity {
     public void sincronizar(View view){
 
         Ut07 t07 = new Ut07(
+                nomeEquipamento.getText().toString(),
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

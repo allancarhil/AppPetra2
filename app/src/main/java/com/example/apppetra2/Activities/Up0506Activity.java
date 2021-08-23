@@ -42,6 +42,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Up0506Activity extends AppCompatActivity {
+    private TextView nomeEquipamento;
 
     public Button btnUp0506Cancelar;
     public Button btnSomaProf;
@@ -401,6 +402,8 @@ public class Up0506Activity extends AppCompatActivity {
         btnUp0506Salvar=findViewById(R.id.btnUp0506Save);
         btnUp0506Sincronizar=findViewById(R.id.btnUp0506Sincronizar);
         btnUp0506Sincronizar.setVisibility(View.INVISIBLE);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUp0507);
+
 
 
 
@@ -1047,7 +1050,9 @@ public class Up0506Activity extends AppCompatActivity {
             btnUp0506Salvar.setVisibility(View.INVISIBLE);
             btnUp0506Sincronizar.setVisibility(View.VISIBLE);
             Up0506 p0506 = new Up0506(
-             motorista.getText().toString(),
+                    nomeEquipamento.getText().toString(),
+
+                    motorista.getText().toString(),
              data.getText().toString(),
              horaInicial.getText().toString(),
              horaFinal.getText().toString(),
@@ -1219,7 +1224,7 @@ public class Up0506Activity extends AppCompatActivity {
             String currentDateTimeString3 = DateFormat.getTimeInstance().format(new Date());
             horaFinal.setText(currentDateTimeString3);
             p0506.setHoraFinal(horaFinal.getText().toString());
-
+            p0506.setNomeEquipamento(nomeEquipamento.getText().toString());
             p0506.setHorimetroInicial(horimetroInicial.getText().toString());
             p0506.setHorimetroFinal(horimetroFinal.getText().toString());
             p0506.setBanco(banco.getSelectedItem().toString());
@@ -1420,6 +1425,7 @@ public class Up0506Activity extends AppCompatActivity {
 
 
         Up0506 p0506 = new Up0506(
+                nomeEquipamento.getText().toString(),
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

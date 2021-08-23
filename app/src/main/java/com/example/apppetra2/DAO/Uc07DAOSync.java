@@ -17,6 +17,7 @@ public class Uc07DAOSync {
     }
     public long inserir(Uc07 uc07){
         ContentValues values=new ContentValues();
+        values.put("nomeEquipamento",uc07.getNomeEquipamento());
         values.put("motorista",uc07.getMotorista());
         values.put("data",uc07.getData());
         values.put("horaInicial",uc07.getHoraInicial());

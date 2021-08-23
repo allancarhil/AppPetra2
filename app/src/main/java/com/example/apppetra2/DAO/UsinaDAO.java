@@ -19,6 +19,7 @@ public class UsinaDAO {
 
     public long inserir(Usina usina){
         ContentValues values=new ContentValues();
+        values.put("nomeEquipamento",usina.getNomeEquipamento());
         values.put("motorista",usina.getMotorista());
         values.put("data",usina.getData());
         values.put("horaInicial",usina.getHoraInicial());

@@ -1,7 +1,7 @@
 package com.example.apppetra2.Classes;
 
 public class Ub02 {
-
+    private String nomeEquipamento;
     private String motorista;
     private String data;
     private String horaInicial;
@@ -47,7 +47,8 @@ public class Ub02 {
     private String observacoes;
 
 
-    public Ub02(String motorista, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String paradaInicial7, String paradaFinal7, String descricao7, String paradaInicial8, String paradaFinal8, String descricao8, String paradaInicial9, String paradaFinal9, String descricao9, String paradaInicial10, String paradaFinal10, String descricao10, String pedraBritador, String tremonha, String bandeja, String utc01, String balancaInicial, String balancaFinal, String observacoes) {
+    public Ub02(String nomeEquipamento,String motorista, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String paradaInicial7, String paradaFinal7, String descricao7, String paradaInicial8, String paradaFinal8, String descricao8, String paradaInicial9, String paradaFinal9, String descricao9, String paradaInicial10, String paradaFinal10, String descricao10, String pedraBritador, String tremonha, String bandeja, String utc01, String balancaInicial, String balancaFinal, String observacoes) {
+        this.nomeEquipamento=nomeEquipamento;
         this.motorista = motorista;
         this.data = data;
         this.horaInicial = horaInicial;
@@ -93,6 +94,13 @@ public class Ub02 {
         this.observacoes = observacoes;
     }
 
+    public String getNomeEquipamento() {
+        return nomeEquipamento;
+    }
+
+    public void setNomeEquipamento(String nomeEquipamento) {
+        this.nomeEquipamento = nomeEquipamento;
+    }
 
     public String getMotorista() {
         return motorista;

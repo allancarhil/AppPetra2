@@ -30,6 +30,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table us36 (id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 " motorista varchar(50), " +
                 " data varchar(50), " +
                 " horaInicial varchar(50), " +
@@ -44,6 +45,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table mn01(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -80,6 +82,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table us06(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -116,6 +119,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table ut07(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -217,6 +221,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table ut08(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -318,6 +323,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table ut37(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -419,6 +425,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table up0506(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "turno varchar(50),"+
                 "motorista varchar(50)," +
                 "data varchar(50)," +
@@ -586,7 +593,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table uc06(id integer PRIMARY KEY autoincrement, " +
-
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -716,6 +723,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table uc14(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -844,6 +852,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table uc07(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -972,6 +981,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table uc11(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -1016,6 +1026,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table uc13(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -1060,6 +1071,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table ub02(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -1107,6 +1119,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table usina(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +
@@ -1193,6 +1206,7 @@ public class Conexao extends SQLiteOpenHelper {
 
 
         db.execSQL("create table rebritagem(id integer PRIMARY KEY autoincrement, " +
+                "nomeEquipamento varchar(50), " +
                 "motorista varchar(50)," +
                 "data varchar(50)," +
                 "horaInicial varchar(50)," +

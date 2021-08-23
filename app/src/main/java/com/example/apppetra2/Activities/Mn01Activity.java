@@ -45,7 +45,7 @@ public class Mn01Activity extends AppCompatActivity {
     public Button btnMn01Cancelar;
     private Button btnMn01Salvar;
     private Button btnMn01Sincronizar;
-
+    private TextView nomeEquipamento;
     private EditText motorista;
     private EditText data;
     private EditText horaInicial;
@@ -142,6 +142,8 @@ public class Mn01Activity extends AppCompatActivity {
         btnMn01Salvar=findViewById(R.id.btnMn01Save);
         btnMn01Sincronizar=findViewById(R.id.btnMn01Sincronizar);
         btnMn01Sincronizar.setVisibility(View.INVISIBLE);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoMn01);
+
 
 
 
@@ -522,7 +524,8 @@ public class Mn01Activity extends AppCompatActivity {
 
             btnMn01Sincronizar.setVisibility(View.VISIBLE);
             Mn01 m01 = new Mn01(
-                motorista.getText().toString(),
+                    nomeEquipamento.getText().toString(),
+                    motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),
                 horaFinal.getText().toString(),
@@ -556,6 +559,7 @@ public class Mn01Activity extends AppCompatActivity {
                 observacoes.getText().toString()
 
             );
+            m01.setNomeEquipamento(nomeEquipamento.getText().toString());
             m01.setMotorista(motorista.getText().toString());
             m01.setData(data.getText().toString());
             m01.setHoraInicial(horaInicial.getText().toString());
@@ -644,6 +648,8 @@ public class Mn01Activity extends AppCompatActivity {
     public void sincronizar(View view){
 
         Mn01 m01 = new Mn01(
+                nomeEquipamento.getText().toString(),
+
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

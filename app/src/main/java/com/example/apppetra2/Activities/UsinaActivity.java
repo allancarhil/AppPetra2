@@ -45,6 +45,7 @@ public class UsinaActivity extends AppCompatActivity {
 
     private Button btnUsinaSalvar;
     private Button btnUsinaSincronizar;
+    private TextView nomeEquipamento;
 
     public int numeroTF1;
     public int numeroAM1;
@@ -306,6 +307,7 @@ public class UsinaActivity extends AppCompatActivity {
         btnUsinaSalvar=findViewById(R.id.btnUsinaSave);
         btnUsinaSincronizar=findViewById(R.id.btnUsinaSincronizar);
         btnUsinaSincronizar.setVisibility(View.INVISIBLE);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUsina);
 
         Spinner spPEUsinaDesc1 = findViewById(R.id.spPEUsinaDesc1);
         ArrayAdapter<CharSequence> adapterDesc = ArrayAdapter.createFromResource(this, R.array.descricao, android.R.layout.simple_spinner_item);
@@ -1571,6 +1573,7 @@ public class UsinaActivity extends AppCompatActivity {
             btnUsinaSalvar.setVisibility(View.INVISIBLE);
             btnUsinaSincronizar.setVisibility(View.VISIBLE);
             Usina sina = new Usina(
+                    nomeEquipamento.getText().toString(),
                     motorista.getText().toString(),
                     data.getText().toString(),
                     horaInicial.getText().toString(),
@@ -1650,6 +1653,7 @@ public class UsinaActivity extends AppCompatActivity {
                     egaiolada.getText().toString(),
                     obs.getText().toString()
             );
+            sina.setNomeEquipamento(nomeEquipamento.getText().toString());
             sina.setMotorista(motorista.getText().toString());
             sina.setData(data.getText().toString());
             sina.setHoraInicial(horaInicial.getText().toString());
@@ -1794,6 +1798,7 @@ public class UsinaActivity extends AppCompatActivity {
     public void sincronizar(View view){
 
         Usina sina = new Usina(
+                nomeEquipamento.getText().toString(),
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

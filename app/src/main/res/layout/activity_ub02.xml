@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView86"
-        android:layout_width="356dp"
-        android:layout_height="102dp"
+        android:layout_width="350dp"
+        android:layout_height="37dp"
         android:layout_marginTop="32dp"
         android:text="Relatório Diário de Equipamento"
         android:textAlignment="center"
@@ -35,14 +35,23 @@
         android:id="@+id/textView89"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:text="Britador de Mandíbulas C125 - UB-02"
+        android:text="Britador de Mandíbulas C125 - "
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNomeEquipamentoUb02"
         app:layout_constraintEnd_toEndOf="@+id/textView86"
-        app:layout_constraintStart_toStartOf="@+id/textView86"
-        app:layout_constraintTop_toTopOf="@+id/textView86" />
+        app:layout_constraintStart_toStartOf="@+id/textView86" />
+
+    <TextView
+        android:id="@+id/txtNomeEquipamentoUb02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UB-02"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView89"
+        tools:layout_editor_absoluteY="120dp" />
 
     <TextView
         android:id="@+id/textView92"

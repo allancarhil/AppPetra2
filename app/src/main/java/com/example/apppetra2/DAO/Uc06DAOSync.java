@@ -17,6 +17,7 @@ public class Uc06DAOSync {
     }
     public long inserir(Uc06 uc06){
         ContentValues values=new ContentValues();
+        values.put("nomeEquipamento",uc06.getNomeEquipamento());
         values.put("motorista",uc06.getMotorista());
         values.put("data",uc06.getData());
         values.put("horaInicial",uc06.getHoraInicial());

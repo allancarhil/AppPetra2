@@ -51,6 +51,7 @@ public class RebritagemActivity extends AppCompatActivity {
 
     private Button btnRebSalvar;
     private Button btnRebSincronizar;
+    private TextView nomeEquipamento;
 
     public Button btnRebUTC02Mais;
     public Button btnRebUTC02Menos;
@@ -563,6 +564,7 @@ public class RebritagemActivity extends AppCompatActivity {
         retornoB1Horario=findViewById(R.id.txtRebRetornoB1Horarios);
         retornoPedriscoHorario=findViewById(R.id.txtRebRetornoPedriscoHorarios);
         observacoes=findViewById(R.id.txtRebObs);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoRebritagem);
 
         dao= new RebritagemDAO(this);
         dao2= new RebritagemDAOSync(this);
@@ -2821,7 +2823,9 @@ public class RebritagemActivity extends AppCompatActivity {
             btnRebSalvar.setVisibility(View.INVISIBLE);
             btnRebSincronizar.setVisibility(View.VISIBLE);
             Rebritagem reb = new Rebritagem(
-            motorista.getText().toString(),
+                    nomeEquipamento.getText().toString(),
+
+                    motorista.getText().toString(),
             data.getText().toString(),
             horaInicial.getText().toString(),
             horaFinal.getText().toString(),
@@ -3066,7 +3070,7 @@ public class RebritagemActivity extends AppCompatActivity {
             String currentDateTimeString3 = DateFormat.getTimeInstance().format(new Date());
             horaFinal.setText(currentDateTimeString3);
             reb.setHoraFinal(horaFinal.getText().toString());
-
+            reb.setNomeEquipamento(nomeEquipamento.getText().toString());
             reb.setHorimetroInicialUa02(horimetroInicialUa02.getText().toString());
             reb.setHorimetroFinalUa02(horimetroFinalUa02.getText().toString());
             reb.setHorimetroInicialUa03(horimetroInicialUa03.getText().toString());
@@ -3393,6 +3397,8 @@ public class RebritagemActivity extends AppCompatActivity {
     public void sincronizar(View view){
 
         Rebritagem reb = new Rebritagem(
+                nomeEquipamento.getText().toString(),
+
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

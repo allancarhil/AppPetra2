@@ -1,6 +1,7 @@
 package com.example.apppetra2.Classes;
 
 public class Ut37 {
+    private String nomeEquipamento;
     private String motorista;
     private String data;
     private String horaInicial;
@@ -92,7 +93,8 @@ public class Ut37 {
     private String soma780;
     private String condicaoPistaObservacoes;
 
-    public Ut37(String motorista, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String paradaInicial7, String paradaFinal7, String descricao7, String paradaInicial8, String paradaFinal8, String descricao8, String paradaInicial9, String paradaFinal9, String descricao9, String paradaInicial10, String paradaFinal10, String descricao10, String lanternagem, String pneus, String h2o, String oleo, String direcao, String freios, String parteEletrica, String observacoes, String condicaoPista, String numViagens78078, String numViagens78089, String numViagens780910, String numViagens7801011, String numViagens7801112, String numViagens7801213, String numViagens7801314, String numViagens7801415, String numViagens7801516, String numViagens7801617, String numViagens7801718, String obs78, String obs89, String obs910, String obs1011, String obs1112, String obs1213, String obs1314, String obs1415, String obs1516, String obs1617, String obs1718, String numViagensAm, String numViagensBicaCont, String numViagensAf, String numViagensPedrisco, String numViagensBicaPr, String numViagensBica790, String numViagensBicaUm, String numViagensBr1Pr, String numViagensBr119, String numViagensBr0Pr, String numViagensBr0Um, String numViagensBicaForro, String numViagensB0, String numViagensB1, String numViagensB2, String numViagensAim, String numViagensFundo, String numViagens780, String numViagens790, String numViagens800, String numViagens810, String soma780, String condicaoPistaObservacoes) {
+    public Ut37(String nomeEquipamento, String motorista, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String paradaInicial7, String paradaFinal7, String descricao7, String paradaInicial8, String paradaFinal8, String descricao8, String paradaInicial9, String paradaFinal9, String descricao9, String paradaInicial10, String paradaFinal10, String descricao10, String lanternagem, String pneus, String h2o, String oleo, String direcao, String freios, String parteEletrica, String observacoes, String condicaoPista, String numViagens78078, String numViagens78089, String numViagens780910, String numViagens7801011, String numViagens7801112, String numViagens7801213, String numViagens7801314, String numViagens7801415, String numViagens7801516, String numViagens7801617, String numViagens7801718, String obs78, String obs89, String obs910, String obs1011, String obs1112, String obs1213, String obs1314, String obs1415, String obs1516, String obs1617, String obs1718, String numViagensAm, String numViagensBicaCont, String numViagensAf, String numViagensPedrisco, String numViagensBicaPr, String numViagensBica790, String numViagensBicaUm, String numViagensBr1Pr, String numViagensBr119, String numViagensBr0Pr, String numViagensBr0Um, String numViagensBicaForro, String numViagensB0, String numViagensB1, String numViagensB2, String numViagensAim, String numViagensFundo, String numViagens780, String numViagens790, String numViagens800, String numViagens810, String soma780, String condicaoPistaObservacoes) {
+        this.nomeEquipamento=nomeEquipamento;
         this.motorista = motorista;
         this.data = data;
         this.horaInicial = horaInicial;
@@ -183,6 +185,14 @@ public class Ut37 {
         this.numViagens810 = numViagens810;
         this.soma780 = soma780;
         this.condicaoPistaObservacoes = condicaoPistaObservacoes;
+    }
+
+    public String getNomeEquipamento() {
+        return nomeEquipamento;
+    }
+
+    public void setNomeEquipamento(String nomeEquipamento) {
+        this.nomeEquipamento = nomeEquipamento;
     }
 
     public String getMotorista() {

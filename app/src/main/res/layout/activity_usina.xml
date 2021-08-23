@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
-        android:text="USINA TRAÇO FÁCIL"
+        android:text="TRAÇO FÁCIL"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -3030,5 +3030,16 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/txtNomeEquipamentoUsina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="USINA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView89"
+        tools:layout_editor_absoluteY="120dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

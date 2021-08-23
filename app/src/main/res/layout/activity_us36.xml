@@ -167,8 +167,8 @@
                 android:background="@drawable/textview_border"
                 android:ems="10"
                 android:inputType="number|numberDecimal"
-                android:textSize="18sp"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textSize="18sp" />
 
         </TableRow>
     </TableLayout>
@@ -271,13 +271,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="Saveiro -US-36"
+        android:text="Saveiro -"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/txtNomeUs36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="US-36"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView8"

@@ -1,7 +1,7 @@
 package com.example.apppetra2.Classes;
 
 public class Up0506 {
-
+    private String nomeEquipamento;
     private String motorista;
     private String data;
     private String horaInicial;
@@ -167,7 +167,9 @@ public class Up0506 {
     private String somaprofundidade;
 
 
-    public Up0506(String motorista, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String banco, String turno, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String paradaInicial7, String paradaFinal7, String descricao7, String paradaInicial8, String paradaFinal8, String descricao8, String paradaInicial9, String paradaFinal9, String descricao9, String paradaInicial10, String paradaFinal10, String descricao10, String lanternagem, String h2o, String oleo, String observacoes, String furo1, String furo2, String furo3, String furo4, String furo5, String furo6, String furo7, String furo8, String furo9, String furo10, String furo11, String furo12, String furo13, String furo14, String furo15, String furo16, String furo17, String furo18, String furo19, String furo20, String furo21, String furo22, String furo23, String furo24, String furo25, String furo26, String furo27, String furo28, String furo29, String furo30, String furo31, String furo32, String furo33, String furo34, String furo35, String furo36, String furo37, String furo38, String furo39, String furo40, String profundidade1, String profundidade2, String profundidade3, String profundidade4, String profundidade5, String profundidade6, String profundidade7, String profundidade8, String profundidade9, String profundidade10, String profundidade11, String profundidade12, String profundidade13, String profundidade14, String profundidade15, String profundidade16, String profundidade17, String profundidade18, String profundidade19, String profundidade20, String profundidade21, String profundidade22, String profundidade23, String profundidade24, String profundidade25, String profundidade26, String profundidade27, String profundidade28, String profundidade29, String profundidade30, String profundidade31, String profundidade32, String profundidade33, String profundidade34, String profundidade35, String profundidade36, String profundidade37, String profundidade38, String profundidade39, String profundidade40, String bit1, String bit2, String bit3, String bit4, String bit5, String bit6, String bit7, String bit8, String bit9, String bit10, String bit11, String bit12, String bit13, String bit14, String bit15, String bit16, String bit17, String bit18, String bit19, String bit20, String bit21, String bit22, String bit23, String bit24, String bit25, String bit26, String bit27, String bit28, String bit29, String bit30, String bit31, String bit32, String bit33, String bit34, String bit35, String bit36, String bit37, String bit38, String bit39, String bit40, String somaprofundidade) {
+    public Up0506(String nomeEquipamento,String motorista, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String banco, String turno, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String paradaInicial7, String paradaFinal7, String descricao7, String paradaInicial8, String paradaFinal8, String descricao8, String paradaInicial9, String paradaFinal9, String descricao9, String paradaInicial10, String paradaFinal10, String descricao10, String lanternagem, String h2o, String oleo, String observacoes, String furo1, String furo2, String furo3, String furo4, String furo5, String furo6, String furo7, String furo8, String furo9, String furo10, String furo11, String furo12, String furo13, String furo14, String furo15, String furo16, String furo17, String furo18, String furo19, String furo20, String furo21, String furo22, String furo23, String furo24, String furo25, String furo26, String furo27, String furo28, String furo29, String furo30, String furo31, String furo32, String furo33, String furo34, String furo35, String furo36, String furo37, String furo38, String furo39, String furo40, String profundidade1, String profundidade2, String profundidade3, String profundidade4, String profundidade5, String profundidade6, String profundidade7, String profundidade8, String profundidade9, String profundidade10, String profundidade11, String profundidade12, String profundidade13, String profundidade14, String profundidade15, String profundidade16, String profundidade17, String profundidade18, String profundidade19, String profundidade20, String profundidade21, String profundidade22, String profundidade23, String profundidade24, String profundidade25, String profundidade26, String profundidade27, String profundidade28, String profundidade29, String profundidade30, String profundidade31, String profundidade32, String profundidade33, String profundidade34, String profundidade35, String profundidade36, String profundidade37, String profundidade38, String profundidade39, String profundidade40, String bit1, String bit2, String bit3, String bit4, String bit5, String bit6, String bit7, String bit8, String bit9, String bit10, String bit11, String bit12, String bit13, String bit14, String bit15, String bit16, String bit17, String bit18, String bit19, String bit20, String bit21, String bit22, String bit23, String bit24, String bit25, String bit26, String bit27, String bit28, String bit29, String bit30, String bit31, String bit32, String bit33, String bit34, String bit35, String bit36, String bit37, String bit38, String bit39, String bit40, String somaprofundidade) {
+
+        this.nomeEquipamento=nomeEquipamento;
         this.motorista = motorista;
         this.data = data;
         this.horaInicial = horaInicial;
@@ -331,6 +333,14 @@ public class Up0506 {
         this.bit39 = bit39;
         this.bit40 = bit40;
         this.somaprofundidade=somaprofundidade;
+    }
+
+    public String getNomeEquipamento() {
+        return nomeEquipamento;
+    }
+
+    public void setNomeEquipamento(String nomeEquipamento) {
+        this.nomeEquipamento = nomeEquipamento;
     }
 
     public String getMotorista() {

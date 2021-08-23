@@ -53,6 +53,7 @@ public class Uc14Activity extends AppCompatActivity {
 
     private Button btnUc14Salvar;
     private Button btnUc14Sincronizar;
+    private TextView nomeEquipamento;
 
     int numeroUc14B0Viagens=0;
     int numeroUc14B1Viagens=0;
@@ -545,6 +546,7 @@ public class Uc14Activity extends AppCompatActivity {
         somaAxor=findViewById(R.id.txtUc14SomaAxor);
 
 
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUc14);
 
         lanternagem=findViewById(R.id.chkUc14Lant);
         pneus=findViewById(R.id.chkUc14Pn);
@@ -2521,6 +2523,8 @@ public class Uc14Activity extends AppCompatActivity {
             btnUc14Salvar.setVisibility(View.INVISIBLE);
             btnUc14Sincronizar.setVisibility(View.VISIBLE);
             Uc14 c14 = new Uc14(
+                    nomeEquipamento.getText().toString(),
+
                     motorista.getText().toString(),
                     data.getText().toString(),
                     horaInicial.getText().toString(),
@@ -2667,6 +2671,7 @@ public class Uc14Activity extends AppCompatActivity {
 
 
             );
+            c14.setNomeEquipamento(nomeEquipamento.getText().toString());
             c14.setMotorista(motorista.getText().toString());
             c14.setData(data.getText().toString());
             c14.setHoraInicial(horaInicial.getText().toString());
@@ -2999,6 +3004,8 @@ public class Uc14Activity extends AppCompatActivity {
     public void sincronizar(View view){
 
         Uc14 c14 = new Uc14(
+                nomeEquipamento.getText().toString(),
+
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

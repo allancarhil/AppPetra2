@@ -50,6 +50,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Uc07Activity extends AppCompatActivity {
     private Button btnUc07Salvar;
     private Button btnUc07Sincronizar;
+    private TextView nomeEquipamento;
 
     int numeroUc07B0Viagens=0;
     int numeroUc07B1Viagens=0;
@@ -550,6 +551,7 @@ public class Uc07Activity extends AppCompatActivity {
         direcao=findViewById(R.id.chkUc07Dir);
         freios=findViewById(R.id.chkUc07Fr);
         parteEletrica=findViewById(R.id.chkUc07PtElet);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUc07);
 
         observacoes=findViewById(R.id.txtUc07Obs);
 
@@ -2518,6 +2520,8 @@ public class Uc07Activity extends AppCompatActivity {
             btnUc07Salvar.setVisibility(View.INVISIBLE);
             btnUc07Sincronizar.setVisibility(View.VISIBLE);
             Uc07 c07 = new Uc07(
+                    nomeEquipamento.getText().toString(),
+
                     motorista.getText().toString(),
                     data.getText().toString(),
                     horaInicial.getText().toString(),
@@ -2664,6 +2668,7 @@ public class Uc07Activity extends AppCompatActivity {
 
 
             );
+            c07.setNomeEquipamento(nomeEquipamento.getText().toString());
             c07.setMotorista(motorista.getText().toString());
             c07.setData(data.getText().toString());
             c07.setHoraInicial(horaInicial.getText().toString());
@@ -2996,6 +3001,8 @@ public class Uc07Activity extends AppCompatActivity {
     public void sincronizar(View view){
 
         Uc07 c07 = new Uc07(
+                nomeEquipamento.getText().toString(),
+
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

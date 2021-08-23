@@ -17,6 +17,7 @@ public class Up0506DAO {
     }
     public long inserir(Up0506 up0506) {
         ContentValues values = new ContentValues();
+        values.put("nomeEquipamento",up0506.getNomeEquipamento());
         values.put("turno",up0506.getTurno());
         values.put("motorista", up0506.getMotorista());
         values.put("data", up0506.getData());

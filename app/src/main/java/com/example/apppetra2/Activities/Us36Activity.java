@@ -55,6 +55,7 @@ public class Us36Activity extends AppCompatActivity {
     private us36DAOSync dao2;
     private Retrofit retrofit;
     private Button btnsincronizar;
+    private TextView nomeEquipamento;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,11 +89,13 @@ public class Us36Activity extends AppCompatActivity {
         observacoes = findViewById(R.id.txtUs36Obs);
         lanternagem = findViewById(R.id.chkUs36Lant);
         pneus = findViewById(R.id.chkUs36Pn);
+        nomeEquipamento=findViewById(R.id.txtNomeUs36);
         dao = new us36DAO(this);
         dao2 = new us36DAOSync(this);
         btnsincronizar = findViewById(R.id.btnUs36Sinc);
         btnUs36Salvar= findViewById(R.id.btnUs36Save);
         btnsincronizar.setVisibility(View.INVISIBLE);
+
         String pneus2 = pneus.getText().toString();
         String lant = lanternagem.getText().toString();
 
@@ -203,6 +206,7 @@ public class Us36Activity extends AppCompatActivity {
 
             btnsincronizar.setVisibility(View.VISIBLE);
             Us36 u36 = new Us36(
+                    nomeEquipamento.getText().toString(),
                     motorista.getText().toString(),
                     data.getText().toString(),
                     horaInicial.getText().toString(),
@@ -215,6 +219,8 @@ public class Us36Activity extends AppCompatActivity {
                     pneus.getText().toString());
 
 
+
+            u36.setNomeEquipamento(nomeEquipamento.getText().toString());
             u36.setMotorista(motorista.getText().toString());
             u36.setData(data.getText().toString());
             u36.setHoraInicial(horaInicial.getText().toString());
@@ -261,6 +267,7 @@ public class Us36Activity extends AppCompatActivity {
     public void sincronizar(View view) {
 
         Us36 u36 = new Us36(
+                nomeEquipamento.getText().toString(),
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

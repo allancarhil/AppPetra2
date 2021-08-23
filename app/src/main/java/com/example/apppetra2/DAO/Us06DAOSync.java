@@ -8,16 +8,18 @@ import com.example.apppetra2.Classes.Us06;
 import com.example.apppetra2.Conexao.Conexao;
 
 public class Us06DAOSync {
-    private Conexao conexao;
     private SQLiteDatabase banco;
+    private Conexao conexao;
 
     public Us06DAOSync(Context context){
-        conexao= new Conexao(context);
+        conexao=new Conexao(context);
         banco=conexao.getWritableDatabase();
-    }
-    public long sincronizar(Us06 us06) {
 
+    }
+
+    public long sincronizar(Us06 us06){
         ContentValues values=new ContentValues();
+        values.put("nomeEquipamento",us06.getNomeEquipamento());
         values.put("motorista",us06.getMotorista());
         values.put("data",us06.getData());
         values.put("horaInicial",us06.getHoraInicial());
@@ -51,7 +53,12 @@ public class Us06DAOSync {
         values.put("direcao",us06.getDirecao());
         values.put("freios",us06.getFreios());
         values.put("observacoes",us06.getObservacoes());
-
-        return banco.insert("us06",null, values);    }
-
+        return banco.insert("us06",null, values);
+    }
 }
+
+
+
+
+
+

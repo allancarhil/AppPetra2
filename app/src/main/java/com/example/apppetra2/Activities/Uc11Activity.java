@@ -45,6 +45,7 @@ public class Uc11Activity extends AppCompatActivity {
 
     private Button btnUc11Salvar;
     private Button btnUC11Sincronizar;
+    private TextView nomeEquipamento;
 
     public Button btnUc11Cancelar;
     private EditText motorista;
@@ -155,8 +156,9 @@ public class Uc11Activity extends AppCompatActivity {
         dao2=new Uc11DAOSync(this);
         btnUc11Salvar=findViewById(R.id.btnUc11Save);
         btnUC11Sincronizar=findViewById(R.id.btnUc11Sincronizar);
-        btnUC11Sincronizar.setVisibility(View.INVISIBLE);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUc11);
 
+        btnUC11Sincronizar.setVisibility(View.INVISIBLE);
         Spinner spPEUc11Desc1= findViewById(R.id.spPEUc11Desc1);
         ArrayAdapter<CharSequence> adapterDesc=ArrayAdapter.createFromResource(this,R.array.descricao, android.R.layout.simple_spinner_item);
         adapterDesc.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -682,6 +684,8 @@ public class Uc11Activity extends AppCompatActivity {
             btnUc11Salvar.setVisibility(View.INVISIBLE);
             btnUC11Sincronizar.setVisibility(View.VISIBLE);
             Uc11 c11 = new Uc11(
+                    nomeEquipamento.getText().toString(),
+
                     motorista.getText().toString(),
                     data.getText().toString(),
                     horaInicial.getText().toString(),
@@ -724,6 +728,7 @@ public class Uc11Activity extends AppCompatActivity {
                     hidraulico.getText().toString(),
                     observacoes.getText().toString()
             );
+            c11.setNomeEquipamento(nomeEquipamento.getText().toString());
             c11.setMotorista(motorista.getText().toString());
             c11.setData(data.getText().toString());
             c11.setHoraInicial(horaInicial.getText().toString());
@@ -810,6 +815,8 @@ public class Uc11Activity extends AppCompatActivity {
     public void sincronizar(View view){
 
         Uc11 c11 = new Uc11(
+                nomeEquipamento.getText().toString(),
+
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

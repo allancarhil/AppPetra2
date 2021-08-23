@@ -17,6 +17,7 @@ public class Ub02DAOSync {
     }
     public long inserir(Ub02 ub02){
     ContentValues values=new ContentValues();
+        values.put("nomeEquipamento",ub02.getNomeEquipamento());
         values.put("motorista",ub02.getMotorista());
         values.put("data",ub02.getData());
         values.put("horaInicial",ub02.getHoraInicial());

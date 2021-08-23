@@ -18,6 +18,7 @@ public class Us06DAO {
     public long inserir(Us06 us06) {
 
         ContentValues values=new ContentValues();
+        values.put("nomeEquipamento",us06.getNomeEquipamento());
         values.put("motorista",us06.getMotorista());
         values.put("data",us06.getData());
         values.put("horaInicial",us06.getHoraInicial());

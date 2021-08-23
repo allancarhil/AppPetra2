@@ -54,6 +54,7 @@ public class Ut37Activity extends AppCompatActivity {
     private Button btnUt37Salvar;
     private Button btnUt37Sincronizar;
 
+    private TextView nomeEquipamento;
 
     int numero78078 = 0;
     int numero78089 = 0;
@@ -365,6 +366,8 @@ public class Ut37Activity extends AppCompatActivity {
         btnUt37Sincronizar=findViewById(R.id.btnUt37Sincronizar);
         btnUt37Sincronizar.setVisibility(View.INVISIBLE);
         condicaoPistaObservacoes = findViewById(R.id.txtUt37CondPistaObs);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUt37);
+
         dao = new Ut37DAO(this);
         dao2=new Ut37DAOSync(this);
 
@@ -1905,6 +1908,7 @@ public class Ut37Activity extends AppCompatActivity {
             btnUt37Salvar.setVisibility(View.INVISIBLE);
             btnUt37Sincronizar.setVisibility(View.VISIBLE);
             Ut37 t37 = new Ut37(
+                    nomeEquipamento.getText().toString(),
                     motorista.getText().toString(),
                     data.getText().toString(),
                     horaInicial.getText().toString(),
@@ -1998,7 +2002,7 @@ public class Ut37Activity extends AppCompatActivity {
                     condicaoPistaObservacoes.getText().toString()
             );
 
-
+            t37.setNomeEquipamento(nomeEquipamento.getText().toString());
             t37.setMotorista(motorista.getText().toString());
             t37.setData(data.getText().toString());
             t37.setHoraInicial(horaInicial.getText().toString());
@@ -2183,6 +2187,8 @@ public class Ut37Activity extends AppCompatActivity {
     public void sincronizar(View view){
 
         Ut37 t37 = new Ut37(
+                nomeEquipamento.getText().toString(),
+
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

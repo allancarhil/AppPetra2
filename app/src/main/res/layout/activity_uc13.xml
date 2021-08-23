@@ -36,13 +36,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
-        android:text="Escavadeira EC 460B - UC-13"
+        android:text="Escavadeira EC 460B - "
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView86"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@+id/textView86"
         app:layout_constraintTop_toTopOf="@+id/textView86" />
+
+    <TextView
+        android:id="@+id/txtNomeEquipamentoUc13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="UC-13"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView89"
+        app:layout_constraintStart_toEndOf="@+id/textView89" />
 
     <TextView
         android:id="@+id/textView92"
@@ -167,7 +179,7 @@
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent">
 
                     <Space
                         android:layout_width="wrap_content"
@@ -824,11 +836,11 @@
                             android:id="@+id/txtUc13Obs"
                             android:layout_width="428dp"
                             android:layout_height="145dp"
+                            android:background="@drawable/textview_border"
                             android:ems="10"
                             android:gravity="start|top"
                             android:hint="Observações:"
-                            android:inputType="textMultiLine"
-                            android:background="@drawable/textview_border" />
+                            android:inputType="textMultiLine" />
                     </TableRow>
 
                     <TableRow

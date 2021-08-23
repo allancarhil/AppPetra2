@@ -97,6 +97,12 @@ public class UsinaDAOSync {
         values.put("alinhamento",usina.getAlinha());
         values.put("pedraEngaiolada",usina.getEgaiolada());
         values.put("observacoes",usina.getObservacoes());
-        return banco.insert("usina",null, values);
+        return banco.insert("us06",null, values);
     }
 }
+
+
+
+
+
+

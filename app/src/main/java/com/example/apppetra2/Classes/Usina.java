@@ -2,6 +2,7 @@ package com.example.apppetra2.Classes;
 
 public class Usina {
 //    private Integer id;
+private String nomeEquipamento;
     private String motorista;
     private String data;
     private String horaInicial;
@@ -81,7 +82,9 @@ public class Usina {
     private String egaiolada;
     private String observacoes;
 
-    public Usina(String mot, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String paradaInicial7, String paradaFinal7, String descricao7, String paradaInicial8, String paradaFinal8, String descricao8, String paradaInicial9, String paradaFinal9, String descricao9, String paradaInicial10, String paradaFinal10, String descricao10, String mot1, String tf1, String am1, String b01, String b11, String mot1Soma, String mot2, String tf2, String am2, String b02, String b12, String mot2Soma, String mot3, String tf3, String am3, String b03, String b13, String mot3Soma, String mot4, String tf4, String am4, String b04, String b14, String mot4Soma, String mot5, String tf5, String am5, String b05, String b15, String mot5Soma, String mot6, String tf6, String am6, String b06, String b16, String mot6Soma, String bandeja, String rolo, String rolete, String alinha, String egaiolada, String observacoes) {
+    public Usina(String nomeEquipamento,String mot, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String paradaInicial7, String paradaFinal7, String descricao7, String paradaInicial8, String paradaFinal8, String descricao8, String paradaInicial9, String paradaFinal9, String descricao9, String paradaInicial10, String paradaFinal10, String descricao10, String mot1, String tf1, String am1, String b01, String b11, String mot1Soma, String mot2, String tf2, String am2, String b02, String b12, String mot2Soma, String mot3, String tf3, String am3, String b03, String b13, String mot3Soma, String mot4, String tf4, String am4, String b04, String b14, String mot4Soma, String mot5, String tf5, String am5, String b05, String b15, String mot5Soma, String mot6, String tf6, String am6, String b06, String b16, String mot6Soma, String bandeja, String rolo, String rolete, String alinha, String egaiolada, String observacoes) {
+
+        this.nomeEquipamento=nomeEquipamento;
         this.motorista = mot;
         this.data = data;
         this.horaInicial = horaInicial;
@@ -160,6 +163,14 @@ public class Usina {
         this.alinha = alinha;
         this.egaiolada = egaiolada;
         this.observacoes = observacoes;
+    }
+
+    public String getNomeEquipamento() {
+        return nomeEquipamento;
+    }
+
+    public void setNomeEquipamento(String nomeEquipamento) {
+        this.nomeEquipamento = nomeEquipamento;
     }
 
     public String getMotorista() {

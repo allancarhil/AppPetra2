@@ -44,6 +44,7 @@ public class Uc06Activity extends AppCompatActivity {
 
     private Button btnUc06Salvar;
     private Button btnUc06Sincronizar;
+    private TextView nomeEquipamento;
 
     int numeroUc06B0Viagens=0;
     int numeroUc06B1Viagens=0;
@@ -544,6 +545,7 @@ public class Uc06Activity extends AppCompatActivity {
         direcao=findViewById(R.id.chkUc06Dir);
         freios=findViewById(R.id.chkUc06Fr);
         parteEletrica=findViewById(R.id.chkUc06PtElet);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUc06);
 
         observacoes=findViewById(R.id.txtUc06Obs);
 
@@ -2512,6 +2514,8 @@ public class Uc06Activity extends AppCompatActivity {
             btnUc06Salvar.setVisibility(View.INVISIBLE);
             btnUc06Sincronizar.setVisibility(View.VISIBLE);
             Uc06 c06 = new Uc06(
+                    nomeEquipamento.getText().toString(),
+
                     motorista.getText().toString(),
                     data.getText().toString(),
                     horaInicial.getText().toString(),
@@ -2658,6 +2662,7 @@ public class Uc06Activity extends AppCompatActivity {
 
 
             );
+            c06.setNomeEquipamento(nomeEquipamento.getText().toString());
             c06.setMotorista(motorista.getText().toString());
             c06.setData(data.getText().toString());
             c06.setHoraInicial(horaInicial.getText().toString());
@@ -2990,6 +2995,7 @@ public class Uc06Activity extends AppCompatActivity {
     public void sincronizar(View view){
 
         Uc06 c06 = new Uc06(
+                nomeEquipamento.getText().toString(),
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),

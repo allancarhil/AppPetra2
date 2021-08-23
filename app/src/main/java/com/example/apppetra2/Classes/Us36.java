@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class Us36 implements Serializable {
 
    // private Integer id;
+    private String nomeEquipamento;
     private String motorista;
     private String data;
     private String horaInicial;
@@ -23,8 +24,9 @@ public class Us36 implements Serializable {
    // public Us36() {
     //}
 
-    public Us36(String motorista, String data, String horaInicial, String horaFinal, String kmInicial, String kmFinal, String servicos, String observacoes, String lanternagem, String pneus) {
+    public Us36(String nomeEquipamento, String motorista, String data, String horaInicial, String horaFinal, String kmInicial, String kmFinal, String servicos, String observacoes, String lanternagem, String pneus) {
         //this.id = id;
+        this.nomeEquipamento=nomeEquipamento;
         this.motorista = motorista;
         this.data = data;
         this.horaInicial = horaInicial;
@@ -46,6 +48,14 @@ public class Us36 implements Serializable {
     //public void setId(Integer id) {
     //    this.id = id;
    // }
+
+    public String getNomeEquipamento() {
+        return nomeEquipamento;
+    }
+
+    public void setNomeEquipamento(String nomeEquipamento) {
+        this.nomeEquipamento = nomeEquipamento;
+    }
 
     public String getMotorista() {
         return motorista;

@@ -1,7 +1,7 @@
 package com.example.apppetra2.Classes;
 
 public class Us06 {
-
+    private String nomeEquipamento;
     private String motorista;
     private String data;
     private String horaInicial;
@@ -36,7 +36,8 @@ public class Us06 {
     private String freios;
     private String observacoes;
 
-    public Us06(String motorista, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String acudeInterno, String acudeRestaurante, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String lanternagem, String pneus, String h2o, String oleo, String direcao, String freios, String observacoes) {
+    public Us06(String nomeEquipamento, String motorista, String data, String horaInicial, String horaFinal, String horimetroInicial, String horimetroFinal, String acudeInterno, String acudeRestaurante, String paradaInicial1, String paradaFinal1, String descricao1, String paradaInicial2, String paradaFinal2, String descricao2, String paradaInicial3, String paradaFinal3, String descricao3, String paradaInicial4, String paradaFinal4, String descricao4, String paradaInicial5, String paradaFinal5, String descricao5, String paradaInicial6, String paradaFinal6, String descricao6, String lanternagem, String pneus, String h2o, String oleo, String direcao, String freios, String observacoes) {
+        this.nomeEquipamento=nomeEquipamento;
         this.motorista = motorista;
         this.data = data;
         this.horaInicial = horaInicial;
@@ -70,6 +71,14 @@ public class Us06 {
         this.direcao = direcao;
         this.freios = freios;
         this.observacoes = observacoes;
+    }
+
+    public String getNomeEquipamento() {
+        return nomeEquipamento;
+    }
+
+    public void setNomeEquipamento(String nomeEquipamento) {
+        this.nomeEquipamento = nomeEquipamento;
     }
 
     public String getMotorista() {

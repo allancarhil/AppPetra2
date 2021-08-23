@@ -88,6 +88,7 @@ public class Us06Activity extends AppCompatActivity {
     private CheckBox direcao;
     private CheckBox freios;
     private EditText observacoes;
+    private TextView nomeEquipamento;
     private Us06DAO dao;
     private Us06DAOSync dao2;
     private Retrofit retrofit;
@@ -151,6 +152,7 @@ public class Us06Activity extends AppCompatActivity {
         direcao=findViewById(R.id.chkUs06Dir);
         freios=findViewById(R.id.chkUs06Fr);
         observacoes=findViewById(R.id.txtUs06Obs);
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUs06);
         dao=new Us06DAO(this);
         dao2 = new Us06DAOSync(this);
         btnsincronizar = findViewById(R.id.btnUs06Sinc);
@@ -573,6 +575,7 @@ public class Us06Activity extends AppCompatActivity {
             btnsincronizar.setVisibility(View.VISIBLE);
 
             Us06 s06 = new Us06(
+                    nomeEquipamento.getText().toString(),
                     motorista.getText().toString(),
                     data.getText().toString(),
             horaInicial.getText().toString(),
@@ -607,6 +610,7 @@ public class Us06Activity extends AppCompatActivity {
             freios.getText().toString(),
             observacoes.getText().toString()
             );
+            s06.setNomeEquipamento(nomeEquipamento.getText().toString());
             s06.setMotorista(motorista.getText().toString());
             s06.setData(data.getText().toString());
             s06.setHoraInicial(horaInicial.getText().toString());
@@ -707,6 +711,7 @@ public class Us06Activity extends AppCompatActivity {
     public void sincronizar(View view) {
 
         Us06 s06 = new Us06(
+                nomeEquipamento.getText().toString(),
                 motorista.getText().toString(),
                 data.getText().toString(),
                 horaInicial.getText().toString(),
