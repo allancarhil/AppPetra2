@@ -49,6 +49,7 @@ public class Us36 implements Serializable {
     //    this.id = id;
    // }
 
+
     public String getNomeEquipamento() {
         return nomeEquipamento;
     }

@@ -41,6 +41,7 @@ public class Us36Activity extends AppCompatActivity {
 
     public Button btnUs36Cancelar;
     public Button btnUs36Salvar;
+    private EditText nomeEquipamento;
     private EditText motorista;
     private EditText data;
     private EditText horaInicial;
@@ -55,7 +56,7 @@ public class Us36Activity extends AppCompatActivity {
     private us36DAOSync dao2;
     private Retrofit retrofit;
     private Button btnsincronizar;
-    private TextView nomeEquipamento;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +66,7 @@ public class Us36Activity extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         Intent intent2 = getIntent();
+        nomeEquipamento=findViewById(R.id.txtNomeEquipamentoUs36);
         if (intent2.hasExtra("NAME")) {
             Bundle b = getIntent().getExtras();
             if (!b.getString("NAME").equals(null)) {
@@ -74,7 +76,7 @@ public class Us36Activity extends AppCompatActivity {
 
             }
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://192.168.0.246:8080")
+                    .baseUrl("http://192.168.100.58:8080")
                     .addConverterFactory(GsonConverterFactory.create()).build();
 
         }
@@ -89,7 +91,7 @@ public class Us36Activity extends AppCompatActivity {
         observacoes = findViewById(R.id.txtUs36Obs);
         lanternagem = findViewById(R.id.chkUs36Lant);
         pneus = findViewById(R.id.chkUs36Pn);
-        nomeEquipamento=findViewById(R.id.txtNomeUs36);
+
         dao = new us36DAO(this);
         dao2 = new us36DAOSync(this);
         btnsincronizar = findViewById(R.id.btnUs36Sinc);
@@ -110,6 +112,8 @@ public class Us36Activity extends AppCompatActivity {
         String currentData = sdf.format(d);
         data.setText(currentData);
 
+        TextView nomeEquipamento = (TextView) findViewById(R.id.txtNomeEquipamentoUs36);
+        nomeEquipamento.setText("US-36");
 
         btnUs36Cancelar = findViewById(R.id.btnUs36Cancel);
         btnUs36Cancelar.setOnClickListener(new View.OnClickListener() {
@@ -279,7 +283,7 @@ public class Us36Activity extends AppCompatActivity {
                 lanternagem.getText().toString(),
                 pneus.getText().toString());
 
-        long id = dao2.sincronizar(u36);
+        long id = dao.inserir(u36);
         Us36Service apiService = retrofit.create(Us36Service.class);
         Call<Us36> call = apiService.salvarInfoUs36(u36);
 

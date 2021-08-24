@@ -103,7 +103,7 @@ public class Mn01Activity extends AppCompatActivity {
 
             retrofit = new Retrofit.Builder()
                    // .baseUrl("https://apipetra.azurewebsites.net/")
-                    .baseUrl("http://192.168.0.246:8080")
+                    .baseUrl("http://192.168.100.58:8080")
                     .addConverterFactory(GsonConverterFactory.create()).build();
         }
         data=findViewById(R.id.txtMn01Data);

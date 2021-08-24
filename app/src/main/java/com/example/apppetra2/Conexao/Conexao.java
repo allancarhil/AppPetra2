@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
@@ -18,6 +19,7 @@ public class Conexao extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        Log.v("criou o banco","aviso de criação de banco");
         db.execSQL("create table funcionario (id integer PRIMARY KEY autoincrement, " +
                 " nome varchar(50), " +
                 " cpf varchar(50), " +
@@ -42,7 +44,7 @@ public class Conexao extends SQLiteOpenHelper {
                 " lanternagem varchar(20), " +
                 " pneus varchar(20) ) ");
 
-
+        Log.v("criou a tabela us36","aviso de criação de tabela");
 
         db.execSQL("create table mn01(id integer PRIMARY KEY autoincrement, " +
                 "nomeEquipamento varchar(50), " +

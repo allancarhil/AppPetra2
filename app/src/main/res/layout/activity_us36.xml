@@ -289,6 +289,19 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintStart_toEndOf="@+id/textView6" />
 
+    <EditText
+        android:id="@+id/txtNomeEquipamentoUs36"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="US-36"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txtNomeUs36"
+        tools:layout_editor_absoluteY="149dp" />
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="140dp"
